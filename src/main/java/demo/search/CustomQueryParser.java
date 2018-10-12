@@ -31,7 +31,7 @@ public class CustomQueryParser extends QueryParser {
     }
 
     public static void main(String args[]) throws ParseException {
-        CustomQueryParser customQueryParser = new CustomQueryParser("filed", new WhitespaceAnalyzer());
+        CustomQueryParser customQueryParser = new CustomQueryParser("field", new WhitespaceAnalyzer());
         customQueryParser.parse("a?t");
         customQueryParser.parse("junit~");
     }
